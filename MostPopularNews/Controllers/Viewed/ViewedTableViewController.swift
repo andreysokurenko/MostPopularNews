@@ -18,9 +18,10 @@ class ViewedTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupCell()
         responseData()
     }
+    
     
     // MARK: responseData
     private func responseData() {
@@ -51,6 +52,11 @@ class ViewedTableViewController: UITableViewController {
             titleArticle.article = selectedTitle
         }
     }
+    // MARK: setupCell
+   private func setupCell() {
+        let nib = UINib(nibName: "TitleLabelCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: TitleLabelCell.reuseId)
+    }
     
     // MARK: numberOfRowsInSection
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -59,13 +65,19 @@ class ViewedTableViewController: UITableViewController {
     
      // MARK: cellForRowAt
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "viewedId", for: indexPath) as! ViewedTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: TitleLabelCell.reuseId, for: indexPath) as! TitleLabelCell
         
         let result = resultArray?[indexPath.row]
-        cell.viewedLabel.text = result?.title
+        cell.titleLabel.text = result?.title
         
         return cell
     }
+    // MARK: heightForRowAt
+
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
+    
      // MARK: didSelectRowAt
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let url = resultArray?[indexPath.row].url else {return}

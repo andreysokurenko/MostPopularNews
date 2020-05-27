@@ -20,7 +20,7 @@ class MostSharedTableViewController: UITableViewController {
         super.viewDidLoad()
         
         responseData()
-        
+        setupCell()
     }
      // MARK: responseData
     func responseData() {
@@ -43,6 +43,12 @@ class MostSharedTableViewController: UITableViewController {
             }
         }
     }
+    
+    // MARK: setupCell
+      private func setupCell() {
+           let nib = UINib(nibName: "TitleLabelCell", bundle: nil)
+           tableView.register(nib, forCellReuseIdentifier: TitleLabelCell.reuseId)
+       }
      // MARK: prepare sharedSegue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "sharedSegue") {
@@ -58,13 +64,18 @@ class MostSharedTableViewController: UITableViewController {
     
     // MARK: cellForRowAt
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "sharedId", for: indexPath) as! MostSharedTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: TitleLabelCell.reuseId, for: indexPath) as! TitleLabelCell
         
         let result = resultArray?[indexPath.row]
-        cell.mostSharedLabel.text = result?.title
+        cell.titleLabel.text = result?.title
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
+    
     // MARK: didSelectRowAt
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let url = resultArray?[indexPath.row].url else {return}

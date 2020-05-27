@@ -18,16 +18,14 @@
 		5565940D247C625500187689 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5565940C247C625500187689 /* NetworkService.swift */; };
 		5565940F247C6DF200187689 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5565940E247C6DF200187689 /* MainTabBarController.swift */; };
 		55659433247C75A300187689 /* EmailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55659432247C75A300187689 /* EmailedViewController.swift */; };
-		5565943D247D38CD00187689 /* EmailedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5565943C247D38CD00187689 /* EmailedViewCell.swift */; };
 		5565943F247D448600187689 /* URLComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5565943E247D448600187689 /* URLComponent.swift */; };
 		55659441247D532600187689 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55659440247D532600187689 /* WebViewController.swift */; };
 		55659444247D70D600187689 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55659443247D70D600187689 /* CoreData.swift */; };
 		55659447247D752D00187689 /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55659446247D752D00187689 /* FavoritesTableViewController.swift */; };
-		55659449247D75AA00187689 /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55659448247D75AA00187689 /* FavoritesTableViewCell.swift */; };
 		55659471247DB5D800187689 /* MostSharedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55659470247DB5D800187689 /* MostSharedTableViewController.swift */; };
-		55659473247DB60500187689 /* MostSharedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55659472247DB60500187689 /* MostSharedTableViewCell.swift */; };
-		55659476247DC51A00187689 /* ViewedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55659475247DC51A00187689 /* ViewedTableViewCell.swift */; };
 		55659478247DC53500187689 /* ViewedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55659477247DC53500187689 /* ViewedTableViewController.swift */; };
+		55B169A1247F0A2600F00D2E /* TitleLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55B169A0247F0A2600F00D2E /* TitleLabelCell.xib */; };
+		55B169A3247F0A5000F00D2E /* TitleLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B169A2247F0A5000F00D2E /* TitleLabelCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,16 +41,14 @@
 		5565940C247C625500187689 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		5565940E247C6DF200187689 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		55659432247C75A300187689 /* EmailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailedViewController.swift; sourceTree = "<group>"; };
-		5565943C247D38CD00187689 /* EmailedViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailedViewCell.swift; sourceTree = "<group>"; };
 		5565943E247D448600187689 /* URLComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLComponent.swift; sourceTree = "<group>"; };
 		55659440247D532600187689 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		55659443247D70D600187689 /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
 		55659446247D752D00187689 /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
-		55659448247D75AA00187689 /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
 		55659470247DB5D800187689 /* MostSharedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostSharedTableViewController.swift; sourceTree = "<group>"; };
-		55659472247DB60500187689 /* MostSharedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostSharedTableViewCell.swift; sourceTree = "<group>"; };
-		55659475247DC51A00187689 /* ViewedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewedTableViewCell.swift; sourceTree = "<group>"; };
 		55659477247DC53500187689 /* ViewedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewedTableViewController.swift; sourceTree = "<group>"; };
+		55B169A0247F0A2600F00D2E /* TitleLabelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleLabelCell.xib; sourceTree = "<group>"; };
+		55B169A2247F0A5000F00D2E /* TitleLabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabelCell.swift; sourceTree = "<group>"; };
 		5E76F9AFE5034CEDDD80712D /* Pods_MostPopularNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MostPopularNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A7808DA8A525A6292394582 /* Pods-MostPopularNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MostPopularNews.debug.xcconfig"; path = "Target Support Files/Pods-MostPopularNews/Pods-MostPopularNews.debug.xcconfig"; sourceTree = "<group>"; };
 		AF2BCDA827AC09CDB74ABF85 /* Pods-MostPopularNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MostPopularNews.release.xcconfig"; path = "Target Support Files/Pods-MostPopularNews/Pods-MostPopularNews.release.xcconfig"; sourceTree = "<group>"; };
@@ -133,11 +129,12 @@
 		55659436247C8A1100187689 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				55659474247DC02D00187689 /* Viewed */,
+				5565947A247E645A00187689 /* TabBar */,
+				55B169A5247F138F00F00D2E /* Cell */,
 				5565946F247DB59D00187689 /* MostShared */,
 				55659445247D74D200187689 /* Emailed */,
 				5565946E247DB50600187689 /* Favourite */,
-				5565947A247E645A00187689 /* TabBar */,
+				55659474247DC02D00187689 /* Viewed */,
 				55659479247DEE2F00187689 /* WebView */,
 			);
 			path = Controllers;
@@ -156,7 +153,6 @@
 			isa = PBXGroup;
 			children = (
 				55659432247C75A300187689 /* EmailedViewController.swift */,
-				5565943C247D38CD00187689 /* EmailedViewCell.swift */,
 			);
 			path = Emailed;
 			sourceTree = "<group>";
@@ -165,7 +161,6 @@
 			isa = PBXGroup;
 			children = (
 				55659446247D752D00187689 /* FavoritesTableViewController.swift */,
-				55659448247D75AA00187689 /* FavoritesTableViewCell.swift */,
 			);
 			path = Favourite;
 			sourceTree = "<group>";
@@ -174,7 +169,6 @@
 			isa = PBXGroup;
 			children = (
 				55659470247DB5D800187689 /* MostSharedTableViewController.swift */,
-				55659472247DB60500187689 /* MostSharedTableViewCell.swift */,
 			);
 			path = MostShared;
 			sourceTree = "<group>";
@@ -182,7 +176,6 @@
 		55659474247DC02D00187689 /* Viewed */ = {
 			isa = PBXGroup;
 			children = (
-				55659475247DC51A00187689 /* ViewedTableViewCell.swift */,
 				55659477247DC53500187689 /* ViewedTableViewController.swift */,
 			);
 			path = Viewed;
@@ -202,6 +195,15 @@
 				5565940E247C6DF200187689 /* MainTabBarController.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		55B169A5247F138F00F00D2E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				55B169A0247F0A2600F00D2E /* TitleLabelCell.xib */,
+				55B169A2247F0A5000F00D2E /* TitleLabelCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		FB00257C1F3A34B6256663BB /* Pods */ = {
@@ -274,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55659403247C4FDA00187689 /* LaunchScreen.storyboard in Resources */,
+				55B169A1247F0A2600F00D2E /* TitleLabelCell.xib in Resources */,
 				55659400247C4FDA00187689 /* Assets.xcassets in Resources */,
 				556593FB247C4FD200187689 /* Main.storyboard in Resources */,
 			);
@@ -332,16 +335,13 @@
 				55659478247DC53500187689 /* ViewedTableViewController.swift in Sources */,
 				55659471247DB5D800187689 /* MostSharedTableViewController.swift in Sources */,
 				5565943F247D448600187689 /* URLComponent.swift in Sources */,
-				5565943D247D38CD00187689 /* EmailedViewCell.swift in Sources */,
 				55659447247D752D00187689 /* FavoritesTableViewController.swift in Sources */,
 				55659441247D532600187689 /* WebViewController.swift in Sources */,
+				55B169A3247F0A5000F00D2E /* TitleLabelCell.swift in Sources */,
 				55659444247D70D600187689 /* CoreData.swift in Sources */,
 				556593F6247C4FD200187689 /* SceneDelegate.swift in Sources */,
 				55659433247C75A300187689 /* EmailedViewController.swift in Sources */,
 				5565940F247C6DF200187689 /* MainTabBarController.swift in Sources */,
-				55659473247DB60500187689 /* MostSharedTableViewCell.swift in Sources */,
-				55659476247DC51A00187689 /* ViewedTableViewCell.swift in Sources */,
-				55659449247D75AA00187689 /* FavoritesTableViewCell.swift in Sources */,
 				5565940B247C5F5D00187689 /* ModelMostEmailed.swift in Sources */,
 				5565940D247C625500187689 /* NetworkService.swift in Sources */,
 				556593FE247C4FD200187689 /* MostPopularNews.xcdatamodeld in Sources */,

@@ -16,7 +16,7 @@ class WebViewController: UIViewController, WKNavigationDelegate {
     @IBOutlet weak var activityInd: UIActivityIndicatorView!
     @IBOutlet weak var favoriteButton: UIBarButtonItem!
     
-    var titleUrl = "https://google.com"
+    var titleUrl = ""
     var article: Result?
     var tasks: [Favorites] = []
     let webViews = WKWebView()
